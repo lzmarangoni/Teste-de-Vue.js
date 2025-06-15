@@ -11,7 +11,8 @@
 </script>
 <template>
     <div>
-        <h2>Olá, {{ props.name }}!</h2>
+        
         <button @click="sayHello">Dizer Olá</button>
+        <h2>Olá, {{ props.name }}!</h2>
     </div>  
 </template>
