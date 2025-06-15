@@ -1,11 +1,14 @@
 <script lang="ts" setup>
-import Counter from './components/Counter.vue';
-import Formulario from './components/Formulario.vue'
+
+import HelloUser from './components/HelloUser.vue';
+function sayHello(mensagem: string) {
+  alert(mensagem);
+}
 </script>
 
 <template>
   <div>
- 
+ <HelloUser name="Luiz" @say-hello="sayHello"></HelloUser>
 
   </div>
 </template>
